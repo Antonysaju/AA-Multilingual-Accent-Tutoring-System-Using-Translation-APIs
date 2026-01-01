@@ -73,13 +73,6 @@ This ensures that **word order matters**, preventing incorrect sentence structur
 https://github.com/user-attachments/assets/a0851f82-fc89-41f7-8a28-9f011b6d98cb
 
 
-## 📂 Project Structure
-├── index.html        # Main UI
-├── style.css         # Styling and layout
-├── script.js         # Core logic (translation, speech, scoring)
-├── favicon.png       # App icon
-└── README.md         # Project documentation
-
 ## ✅ Advantages
 - Fully browser-based (no backend required)
 - Real-time pronunciation feedback
