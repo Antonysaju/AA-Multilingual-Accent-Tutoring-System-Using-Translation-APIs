@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AA Multilingual Accent Tutor</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>AA Multilingual Accent Tutor</h1>
+  </header>
+
+  <main class="container">
+    
+    <section class="card">
+      <h2>Translate & Listen</h2>
+      <p class="description">Choose languages and enter text to get its translation and pronunciation.</p>
+      
+      <div class="language-selector-container">
+        <label for="sourceLanguage">Translate From:</label>
+        <select id="sourceLanguage">
+          <option value="en-US">English</option>
+          <option value="fr-FR">French</option>
+          <option value="es-ES">Spanish</option>
+          <option value="de-DE">German</option>
+          <option value="hi-IN">Hindi</option>
+        </select>
+      </div>
+
+      <div class="language-selector-container">
+        <label for="language">Translate To:</label>
+        <select id="language">
+          <option value="en-US">English</option>
+          <option value="fr-FR">French</option>
+          <option value="es-ES">Spanish</option>
+          <option value="de-DE">German</option>
+          <option value="hi-IN">Hindi</option>
+        </select>
+      </div>
+
+      <textarea id="inputText" placeholder="Type text in any language..."></textarea>
+      <button id="translateBtn">Translate & Speak</button>
+      <p id="translatedOutput">📝 Translation will appear here...</p>
+
+      <div id="videoSection" class="hidden">
+        <h3>🎥 Accent Improvement Videos</h3>
+        <div id="videoContainer"></div>
+      </div>
+
+    </section>
+
+    <section class="card">
+      <h2>Speak & Score</h2>
+      <p class="description">Click to record your voice and get a pronunciation score.</p>
+      
+      <p id="feedback" style="white-space: pre-wrap;"></p>
+
+      <div class="score-display">
+        <p id="score">Your Score: <strong>--/100</strong></p>
+      </div>
+
+      <div class="button-container">
+        <button id="startBtn">🎙️ Start Recording</button>
+        <button id="stopBtn">⏹️ Stop Recording</button>
+      </div>
+
+      <div id="feedbackButtons" class="hidden">
+        <p>Was this translation helpful?</p>
+        <button id="thumbsUp" class="thumb">👍</button>
+        <button id="thumbsDown" class="thumb">👎</button>
+        <p id="userResponse"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
