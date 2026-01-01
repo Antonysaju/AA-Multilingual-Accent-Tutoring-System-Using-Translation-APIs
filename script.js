@@ -24,7 +24,7 @@ let expectedText = "";
 let spokenText = "";
 
 // --- YouTube API ---
-const YOUTUBE_API_KEY = "AIzaSyB4MVo9eYV0A05I6xQLdOQ8KDV2bmskAIU";
+const YOUTUBE_API_KEY = "";
 
 // --- Speech Recognition Setup ---
 if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
@@ -212,4 +212,5 @@ function calculateScore() {
 
   scoreDisplay.innerHTML = `Your Score: <strong>${score}/100</strong>`;
   feedbackDisplay.innerText = `Expected: "${expectedText}"\nYou said: "${spokenText}"`;
+
 }
